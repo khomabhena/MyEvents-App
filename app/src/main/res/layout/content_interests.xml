@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="tech.myevents.app.Interests"
+    tools:showIn="@layout/activity_interests">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:text="Automotive"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:fontFamily="serif"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:onClick="onSwitchAccount"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center_vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/viewX"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tv1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:text="Beauty, Spa &amp; Salon"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:fontFamily="serif"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:onClick="onSwitchAccount"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center_vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv1"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/view2"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tv2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <TextView
+            android:id="@+id/tv3"
+            android:text="Clothing &amp; Apparel"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:fontFamily="serif"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <Switch
+            android:id="@+id/switch3"
+            android:onClick="onSwitchAccount"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center_vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv2"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/view3"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tv3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <TextView
+            android:id="@+id/tv4"
+            android:text="Education"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:fontFamily="serif"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <Switch
+            android:id="@+id/switch4"
+            android:onClick="onSwitchAccount"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center_vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv3"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/view4"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tv4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <TextView
+            android:id="@+id/tv5"
+            android:text="Entertainment"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:fontFamily="serif"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <Switch
+            android:id="@+id/switch5"
+            android:onClick="onSwitchAccount"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center_vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv4"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/view5"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tv5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <TextView
+            android:id="@+id/tv6"
+            android:text="Event Planning &amp; Service"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:fontFamily="serif"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <Switch
+            android:id="@+id/switch6"
+            android:onClick="onSwitchAccount"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center_vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv5"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/view6"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tv6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <TextView
+            android:id="@+id/tv7"
+            android:text="Finance &amp; Banking"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:fontFamily="serif"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <Switch
+            android:id="@+id/switch7"
+            android:onClick="onSwitchAccount"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center_vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv6"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/view7"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tv7"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <TextView
+            android:id="@+id/tv8"
+            android:text="Food &amp; Grocery"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:fontFamily="serif"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/tv7"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <Switch
+            android:id="@+id/switch8"
+            android:onClick="onSwitchAccount"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center_vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv7"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/view8"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tv8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <TextView
+            android:id="@+id/tv9"
+            android:text="Hotel &amp; Lodging"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:fontFamily="serif"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <Switch
+            android:id="@+id/switch9"
+            android:onClick="onSwitchAccount"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center_vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv8"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/view9"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tv9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv10"
+            android:text="Medical &amp; Health"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:fontFamily="serif"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <Switch
+            android:id="@+id/switch10"
+            android:onClick="onSwitchAccount"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center_vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv9"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/view10"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tv10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <TextView
+            android:id="@+id/tv11"
+            android:text="Non-profit"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:fontFamily="serif"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <Switch
+            android:id="@+id/switch11"
+            android:onClick="onSwitchAccount"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center_vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv10"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/view11"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tv11"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <TextView
+            android:id="@+id/tv12"
+            android:text="Community"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:fontFamily="serif"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv11"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <Switch
+            android:id="@+id/switch12"
+            android:onClick="onSwitchAccount"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center_vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv11"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/view12"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tv12"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <TextView
+            android:id="@+id/tv13"
+            android:text="Technology &amp; Design"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:fontFamily="serif"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv12"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <Switch
+            android:id="@+id/switch13"
+            android:onClick="onSwitchAccount"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center_vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv12"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/view13"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tv13"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <TextView
+            android:id="@+id/tv14"
+            android:text="Restaurant"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:fontFamily="serif"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv13"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <Switch
+            android:id="@+id/switch14"
+            android:onClick="onSwitchAccount"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center_vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv13"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/view14"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tv14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <TextView
+            android:id="@+id/tv15"
+            android:text="Shopping &amp; Retail"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:fontFamily="serif"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv14"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <Switch
+            android:id="@+id/switch15"
+            android:onClick="onSwitchAccount"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center_vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv14"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/view15"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tv15"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <TextView
+            android:id="@+id/tv16"
+            android:text="Travel &amp; Transportation"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:fontFamily="serif"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@id/tv15"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <Switch
+            android:id="@+id/switch16"
+            android:onClick="onSwitchAccount"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center_vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv15"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/view16"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tv16"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <TextView
+            android:id="@+id/tv17"
+            android:text="Other"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:fontFamily="serif"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv16"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <Switch
+            android:id="@+id/switch17"
+            android:onClick="onSwitchAccount"
+            android:layout_gravity="center_vertical|end"
+            android:gravity="center_vertical"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv16"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/view17"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tv17"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

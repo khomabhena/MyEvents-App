@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="colorPrimary">#00897b</color>
+        <color name="colorPrimaryDark">#00796b</color>
+        <color name="colorAccent">#008080</color>
+
+        <color name="barColorTeal">#94008080</color>
+        <color name="tabText">#80cbc4</color>
+        <color name="barColorBlack">#000000</color>
+        <color name="barColorWhite">#2300838f</color>
+        
+        <color name="appBarMain">#00897b</color>
+        <color name="appBarMoment">#00796b</color>
+        <color name="appBarAd">#00897b</color>
+        <color name="appBarPlay">#00796b</color>
+
+        <color name="mtsColor">#0288d1</color>
+        <color name="tabIcon">#4db6ac</color>
+        <color name="toolbarWhite">#ffffff</color>
+
+        <color name="barWhite">#ffffff</color>
+        <color name="barWhitish">#80cbc4</color>
+
+        <color name="line_divider">#b0bec5</color>
+        <color name="line_divider_2">#cfd8dc</color>
+
+
+        <color name="ticketSigned">#a4040c</color>
+        <color name="ticketSignedText">#ffffff</color>
+
+
+
+        <color name="appBarMainBus">#354b5c</color>
+        <color name="appBarMessages">#2f4454</color>
+        <color name="appBarComments">#354b5c</color>
+        <color name="appBarReviews">#2f4454</color>
+        <color name="appStatusBar">#2f4454</color>
+        <color name="appIconsBus">#445d71</color>
+        <color name="barWhitishBus">#b0bec5</color>
+
+</resources>

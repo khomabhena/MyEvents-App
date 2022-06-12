@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardRow"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardImage"
+                android:layout_gravity="center_horizontal"
+                card_view:cardCornerRadius="30dp"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintLeft_toLeftOf="parent"
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:id="@+id/ivProfile"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:text="MyEvents App"
+                android:textSize="16sp"
+                android:textColor="#363636"
+                android:fontFamily="serif"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                card_view:layout_constraintTop_toTopOf="@+id/cardImage"
+                card_view:layout_constraintLeft_toRightOf="@+id/cardImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvPhoneNumber"
+                android:text="774876886"
+                android:textSize="14sp"
+                android:textColor="#9e9e9e"
+                android:fontFamily="serif"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="8dp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintLeft_toLeftOf="@+id/tvUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/ivVerified"
+                android:visibility="gone"
+                android:src="@drawable/ic_verified_teal"
+                android:layout_marginStart="5dp"
+                card_view:layout_constraintTop_toTopOf="@+id/tvUsername"
+                card_view:layout_constraintBottom_toBottomOf="@+id/tvUsername"
+                card_view:layout_constraintLeft_toRightOf="@+id/tvUsername"
+                android:layout_width="13dp"
+                android:layout_height="13dp" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constInvite"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:id="@+id/ivShare"
+            android:src="@drawable/ic_share_black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:text="Invite Friends"
+            android:textSize="20sp"
+            android:textColor="#363636"
+            android:layout_marginStart="40dp"
+            card_view:layout_constraintLeft_toRightOf="@+id/ivShare"
+            card_view:layout_constraintTop_toTopOf="@+id/ivShare"
+            card_view:layout_constraintBottom_toBottomOf="@+id/ivShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

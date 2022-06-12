@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/hour"
+        android:title="24 Hrs" />
+    <item
+        android:id="@+id/national"
+        android:title="2 Days" />
+    <item
+        android:id="@+id/city2"
+        android:title="4 Days" />
+    <item
+        android:id="@+id/city3"
+        android:title="7 Days" />
+    <item
+        android:id="@+id/city4"
+        android:title="10 Days" />
+</menu>

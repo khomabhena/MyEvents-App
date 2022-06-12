@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tech.myevents.app">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EventDetails"
+            android:label="@string/title_activity_event_details"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AdDetails"
+            android:label="@string/title_activity_ad_details"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Profile"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName=".Settings"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.Settings" />
+        </activity>
+        <activity
+            android:name=".Interests"
+            android:label="@string/title_activity_interests"
+            android:parentActivityName=".Profile"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.Profile" />
+        </activity>
+        <activity
+            android:name=".ProfileBusiness"
+            android:label="@string/title_activity_business_settings"
+            android:parentActivityName=".Settings"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.Settings" />
+        </activity>
+        <activity
+            android:name=".Size"
+            android:label="@string/title_activity_size"
+            android:parentActivityName=".ProfileBusiness"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.ProfileBusiness" />
+        </activity>
+        <activity
+            android:name=".TicketSettings"
+            android:label="@string/title_activity_ticket_settings"
+            android:parentActivityName=".Settings"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.Settings" />
+        </activity>
+        <activity
+            android:name=".LoyaltyPoints"
+            android:label="@string/title_activity_loyalty_points"
+            android:parentActivityName=".Settings"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.Settings" />
+        </activity>
+        <activity
+            android:name=".ShareApp"
+            android:label="@string/title_activity_share_app"
+            android:parentActivityName=".Settings"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.Settings" />
+        </activity>
+        <activity
+            android:name=".Broadcasts"
+            android:label="@string/title_activity_broadcasts"
+            android:parentActivityName=".Settings"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.Settings" />
+        </activity>
+        <activity
+            android:name=".PaymentEcocash"
+            android:label="@string/title_activity_ecocash_payments"
+            android:parentActivityName=".ProfileBusiness"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.ProfileBusiness" />
+        </activity>
+        <activity
+            android:name=".Friends"
+            android:label="@string/title_activity_friends"
+            android:parentActivityName=".Settings"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.Settings" />
+        </activity>
+        <activity
+            android:name=".Account"
+            android:label="@string/title_activity_account"
+            android:parentActivityName=".Settings"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.Settings" />
+        </activity>
+        <activity
+            android:name=".BroadcastEvent"
+            android:label="@string/title_activity_broadcast_event"
+            android:parentActivityName=".Broadcasts"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.Broadcasts" />
+        </activity>
+        <activity
+            android:name=".BroadcastAd"
+            android:label="@string/title_activity_broadcast_ad"
+            android:parentActivityName=".Broadcasts"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.Broadcasts" />
+        </activity>
+        <activity
+            android:name=".TicketSell"
+            android:label="@string/title_activity_sell_tickets"
+            android:parentActivityName=".BroadcastEvent"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.BroadcastEvent" />
+        </activity>
+        <activity
+            android:name=".Inbox"
+            android:label="@string/title_activity_app_inbox"
+            android:parentActivityName=".Messages"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.Messages" />
+        </activity>
+        <activity
+            android:name=".Comments"
+            android:label="@string/title_activity_comments"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".EventCategory"
+            android:label="@string/title_activity_event_category"
+            android:parentActivityName=".BroadcastEvent"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.BroadcastEvent" />
+        </activity>
+        <activity
+            android:name=".PaymentEvent"
+            android:label="@string/title_activity_event_payments"
+            android:parentActivityName=".BroadcastEvent"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.BroadcastEvent" />
+        </activity>
+        <activity
+            android:name=".SettingsAdmin"
+            android:label="@string/title_activity_admin_settings"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AppVersion"
+            android:label="@string/title_activity_app_version"
+            android:parentActivityName=".SettingsAdmin"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.SettingsAdmin" />
+        </activity>
+        <activity
+            android:name=".Publish"
+            android:label="@string/title_activity_publish"
+            android:parentActivityName=".SettingsAdmin"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.SettingsAdmin" />
+        </activity>
+        <activity
+            android:name=".PublishAd"
+            android:label="@string/title_activity_publish_ad"
+            android:parentActivityName=".Publish"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.Publish" />
+        </activity>
+        <activity
+            android:name=".PublishEvent"
+            android:label="@string/title_activity_publish_event"
+            android:parentActivityName=".Publish"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.Publish" />
+        </activity>
+        <activity
+            android:name=".BroadcastCharges"
+            android:label="@string/title_activity_broadcast_charges"
+            android:parentActivityName=".SettingsAdmin"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.SettingsAdmin" />
+        </activity>
+        <activity
+            android:name=".PromoCode"
+            android:label="@string/title_activity_promo_code"
+            android:parentActivityName=".SettingsAdmin"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.SettingsAdmin" />
+        </activity>
+        <activity
+            android:name=".PaymentsAd"
+            android:label="@string/title_activity_ad_payments"
+            android:parentActivityName=".BroadcastAd"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.BroadcastAd" />
+        </activity>
+        <activity
+            android:name=".AdCategory"
+            android:label="@string/title_activity_ad_category"
+            android:parentActivityName=".BroadcastAd"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.BroadcastAd" />
+        </activity>
+        <activity
+            android:name=".BusinessCategory"
+            android:label="@string/title_activity_business_category"
+            android:parentActivityName=".ProfileBusiness"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.ProfileBusiness" />
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Messages"
+            android:label="@string/title_activity_event_messages"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".WelcomeMessages"
+            android:label="@string/title_activity_welcome_messages"
+            android:parentActivityName=".SettingsAdmin"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.SettingsAdmin" />
+        </activity>
+        <activity
+            android:name=".MomentShare"
+            android:label="@string/title_activity_share_moment"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".BusinessDetails"
+            android:label="@string/title_activity_business_details"
+            android:parentActivityName=".Business"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.Business" />
+        </activity>
+        <activity
+            android:name=".ContactNumber"
+            android:label="@string/title_activity_contact_number"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".TicketUser"
+            android:label="@string/title_activity_user_tickets"
+            android:parentActivityName=".ProfileBusiness"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.ProfileBusiness" />
+        </activity>
+        <activity
+            android:name=".TicketSign"
+            android:label="@string/title_activity_sign_tickets"
+            android:parentActivityName=".TicketSettings"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.TicketSettings" />
+        </activity>
+        <activity
+            android:name=".TicketJoinSigning"
+            android:label="@string/title_activity_join_ticket_signing"
+            android:parentActivityName=".TicketSettings"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.TicketSettings" />
+        </activity>
+        <activity
+            android:name=".Business"
+            android:label="@string/title_activity_businesses"
+            android:parentActivityName=".Settings"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.Settings" />
+        </activity>
+        <activity
+            android:name=".VerifyContacts"
+            android:label="@string/title_activity_verify_contacts"
+            android:parentActivityName=".SettingsAdmin"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.SettingsAdmin" />
+        </activity>
+        <activity
+            android:name=".TicketBuy"
+            android:label="@string/title_activity_buy_tickets"
+            android:parentActivityName=".EventDetails"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.EventDetails" />
+        </activity>
+        <activity
+            android:name=".TicketSend"
+            android:label="@string/title_activity_choose_ticket_contact"
+            android:parentActivityName=".TicketUser"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.TicketUser" />
+        </activity>
+        <activity
+            android:name=".Impressions"
+            android:label="@string/title_activity_impressions"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ExclusiveEvents"
+            android:label="@string/title_activity_exclusive_events"
+            android:parentActivityName=".Settings"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.Settings" />
+        </activity>
+        <activity
+            android:name=".BroadcastExclusiveEvent"
+            android:label="@string/title_activity_broadcast_exclusive_event"
+            android:parentActivityName=".Broadcasts"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.Broadcasts" />
+        </activity>
+        <activity
+            android:name=".UserAccounts"
+            android:label="@string/title_activity_user_accounts"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".VerifyBusiness"
+            android:label="@string/title_activity_verify_business"
+            android:parentActivityName=".SettingsAdmin"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tech.myevents.app.SettingsAdmin" />
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

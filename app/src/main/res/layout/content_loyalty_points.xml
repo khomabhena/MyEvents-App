@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="tech.myevents.app.LoyaltyPoints"
+    tools:showIn="@layout/activity_loyalty_points">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvReferral"
+            android:text="Referral Code: "
+            android:textSize="18sp"
+            android:textColor="#252525"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvReferralCode"
+            android:text="MXN-2012-MT-CX5"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvPoints"
+            android:text="get 30 points for each completed referral. Click to share referral code with friends"
+            android:textSize="12sp"
+            android:textColor="#acacac"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvReferral"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/viewX"
+            android:background="@color/line_divider"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvPoints"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <EditText
+            android:id="@+id/etReferralCode"
+            android:hint="Enter referral code"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:textColorHint="#939393"
+            android:fontFamily="serif"
+            android:inputType="textCapCharacters"
+            android:layout_marginTop="35dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/viewX"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvPoints2"
+            android:text="get instant 200 points for entering someones code and 10 points there after."
+            android:textSize="12sp"
+            android:textColor="#acacac"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/etReferralCode"
+            app:layout_constraintLeft_toLeftOf="@+id/etReferralCode"
+            app:layout_constraintRight_toRightOf="@+id/etReferralCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/ivSend"
+            app:srcCompat="@drawable/profile_send"
+            android:layout_marginStart="20dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="20dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/viewX"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@+id/etReferralCode"
+            app:layout_constraintBottom_toBottomOf="@+id/etReferralCode"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="30dp"
+            android:layout_height="60dp" />
+
+        <View
+            android:id="@+id/view2"
+            android:background="@color/line_divider"
+            android:layout_marginTop="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvPoints2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+
+        <TextView
+            android:text="Referral Points: "
+            android:textSize="16sp"
+            android:textColor="#252525"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/view2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvReferralPoints"
+            android:text="30"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/view2"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvSuccessfulReferrals"
+            android:text="20 successful referrals"
+            android:textSize="12sp"
+            android:textColor="#acacac"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvReferralPoints"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/view3"
+            android:background="@color/line_divider"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvSuccessfulReferrals"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+
+
+
+        <TextView
+            android:text="Loyalty Points: "
+            android:textSize="16sp"
+            android:textColor="#252525"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/view3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvOpenPoints"
+            android:text="30"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/view3"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvOpenTimes"
+            android:text="Daily usage points"
+            android:textSize="12sp"
+            android:textColor="#acacac"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpenPoints"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/view4"
+            android:background="@color/line_divider"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvOpenTimes"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+
+        <TextView
+            android:text="Content Points: "
+            android:textSize="16sp"
+            android:textColor="#252525"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/view4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvContentPoints"
+            android:text="100"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/view4"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvContentViews"
+            android:text="2 points for each content viewed"
+            android:textSize="12sp"
+            android:textColor="#acacac"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvContentPoints"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/view5"
+            android:background="@color/line_divider"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvContentViews"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+
+
+
+        <TextView
+            android:text="Total Loyalty Points: "
+            android:textSize="16sp"
+            android:textColor="#252525"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/view5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvTotalPoints"
+            android:text="8520"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/view5"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/view6"
+            android:background="@color/line_divider"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvTotalPoints"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <TextView
+            android:text="The more points you have, greater are the chances of your winning event tickets, branded caps, t-shirts, airtime and other merchandise. "
+            android:textSize="12sp"
+            android:textColor="#acacac"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/view6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

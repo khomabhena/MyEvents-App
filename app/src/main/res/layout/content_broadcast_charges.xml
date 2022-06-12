@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="tech.myevents.app.BroadcastCharges"
+    tools:showIn="@layout/activity_broadcast_charges">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etNumber"
+            android:hint="Ecocash Number"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:textColorHint="#939393"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/profile_title"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/etNumber"
+            app:layout_constraintBottom_toBottomOf="@+id/etNumber"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+
+        <EditText
+            android:id="@+id/etBroadcastCity"
+            android:hint="Broadcast Range City"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:textColorHint="#939393"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/etNumber"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/ic_venue"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/etBroadcastCity"
+            app:layout_constraintBottom_toBottomOf="@+id/etBroadcastCity"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+
+        <EditText
+            android:id="@+id/etBroadcastNat"
+            android:hint="Broadcast range national"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:textColorHint="#939393"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/etBroadcastCity"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/ic_venue"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/etBroadcastNat"
+            app:layout_constraintBottom_toBottomOf="@+id/etBroadcastNat"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+
+
+
+
+        <EditText
+            android:id="@+id/etLess50"
+            android:hint="Audience less than 50"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:textColorHint="#939393"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/etBroadcastNat"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/profile_money"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/etLess50"
+            app:layout_constraintBottom_toBottomOf="@+id/etLess50"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+
+        <EditText
+            android:id="@+id/etLess100"
+            android:hint="Audience less than 100"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:textColorHint="#939393"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/etLess50"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/profile_money"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/etLess100"
+            app:layout_constraintBottom_toBottomOf="@+id/etLess100"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+
+
+
+
+        <EditText
+            android:id="@+id/etBroadcast0"
+            android:hint="Broadcasts 0"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:textColorHint="#939393"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/etLess100"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/profile_money"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/etBroadcast0"
+            app:layout_constraintBottom_toBottomOf="@+id/etBroadcast0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+
+        <EditText
+            android:id="@+id/etBroadcast1"
+            android:hint="Broadcasts 1"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:textColorHint="#939393"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/etBroadcast0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/profile_money"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/etBroadcast1"
+            app:layout_constraintBottom_toBottomOf="@+id/etBroadcast1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+
+        <EditText
+            android:id="@+id/etBroadcast2"
+            android:hint="Broadcast 2"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:textColorHint="#939393"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/etBroadcast1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/profile_money"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/etBroadcast2"
+            app:layout_constraintBottom_toBottomOf="@+id/etBroadcast2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+
+        <EditText
+            android:id="@+id/etBroadcast3"
+            android:hint="Broadcasts 3"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:textColorHint="#939393"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/etBroadcast2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/profile_money"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/etBroadcast3"
+            app:layout_constraintBottom_toBottomOf="@+id/etBroadcast3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+
+
+
+
+        <EditText
+            android:id="@+id/etSize3"
+            android:hint="Company size 1 - 3"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:textColorHint="#939393"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/etBroadcast3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/profile_money"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/etSize3"
+            app:layout_constraintBottom_toBottomOf="@+id/etSize3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+
+        <EditText
+            android:id="@+id/etSize10"
+            android:hint="Company size 4 - 10"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:textColorHint="#939393"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/etSize3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/profile_money"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/etSize10"
+            app:layout_constraintBottom_toBottomOf="@+id/etSize10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+
+        <EditText
+            android:id="@+id/etSize30"
+            android:hint="Company size 11 - 30"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:textColorHint="#939393"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/etSize10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/profile_money"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/etSize30"
+            app:layout_constraintBottom_toBottomOf="@+id/etSize30"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+
+        <EditText
+            android:id="@+id/etSize50"
+            android:hint="Company size 31 - 50"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:textColorHint="#939393"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/etSize30"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/profile_money"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/etSize50"
+            app:layout_constraintBottom_toBottomOf="@+id/etSize50"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+
+        <EditText
+            android:id="@+id/etSizeAbove50"
+            android:hint="Company size above 50"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:textColorHint="#939393"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/etSize50"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/profile_money"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/etSizeAbove50"
+            app:layout_constraintBottom_toBottomOf="@+id/etSizeAbove50"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+
+
+
+
+        <EditText
+            android:id="@+id/etDuration2"
+            android:hint="Duration 2 days"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:textColorHint="#939393"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/etSizeAbove50"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/profile_money"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/etDuration2"
+            app:layout_constraintBottom_toBottomOf="@+id/etDuration2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+
+        <EditText
+            android:id="@+id/etDuration4"
+            android:hint="Duration 4 days"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:textColorHint="#939393"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/etDuration2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/profile_money"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/etDuration4"
+            app:layout_constraintBottom_toBottomOf="@+id/etDuration4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+
+        <EditText
+            android:id="@+id/etDuration7"
+            android:hint="Duration 7 days"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:textColorHint="#939393"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/etDuration4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/profile_money"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/etDuration7"
+            app:layout_constraintBottom_toBottomOf="@+id/etDuration7"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+
+        <EditText
+            android:id="@+id/etDuration10"
+            android:hint="Duration 10 days"
+            android:textSize="16sp"
+            android:textColor="#393939"
+            android:textColorHint="#939393"
+            android:fontFamily="serif"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/etDuration7"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            app:srcCompat="@drawable/profile_money"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/etDuration10"
+            app:layout_constraintBottom_toBottomOf="@+id/etDuration10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+
+
+
+
+        <ImageView
+            app:srcCompat="@drawable/profile_send"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintTop_toTopOf="@+id/viewSend"
+            app:layout_constraintRight_toRightOf="@+id/viewSend"
+            app:layout_constraintBottom_toBottomOf="@+id/viewSend"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <View
+            android:id="@+id/viewSend"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/etDuration10"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/viewSend"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="30dp"
+            android:layout_height="60dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

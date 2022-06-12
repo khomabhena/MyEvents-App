@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="tech.myevents.app.PromoCode"
+    tools:showIn="@layout/activity_promo_code">
+
+    <EditText
+        android:id="@+id/etTicketCode"
+        android:hint="Ticket Code"
+        android:textSize="16sp"
+        android:textColor="#393939"
+        android:textColorHint="#939393"
+        android:fontFamily="serif"
+        android:inputType="number"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ivTicket"
+        app:srcCompat="@drawable/profile_title"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="@+id/etTicketCode"
+        app:layout_constraintBottom_toBottomOf="@+id/etTicketCode"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+
+    <TextView
+        android:id="@+id/tvTicketValidity"
+        android:hint="Ticket Validity"
+        android:textSize="16sp"
+        android:textColor="#393939"
+        android:fontFamily="serif"
+        android:layout_marginTop="15dp"
+        android:paddingStart="63dp"
+        android:paddingEnd="30dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/etTicketCode"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="50dp" />
+
+    <ImageView
+        app:srcCompat="@drawable/profile_arrow"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toTopOf="@+id/tvTicketValidity"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTicketValidity"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+    <ImageView
+        app:srcCompat="@drawable/ic_timelapse"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="@+id/tvTicketValidity"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTicketValidity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+
+
+
+
+    <EditText
+        android:id="@+id/etEventCode"
+        android:hint="Event Code"
+        android:textSize="16sp"
+        android:textColor="#393939"
+        android:textColorHint="#939393"
+        android:fontFamily="serif"
+        android:inputType="number"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTicketValidity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ivEvent"
+        app:srcCompat="@drawable/ic_venue"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="@+id/etEventCode"
+        app:layout_constraintBottom_toBottomOf="@+id/etEventCode"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+
+    <TextView
+        android:id="@+id/tvEventValidity"
+        android:hint="Event Validity"
+        android:textSize="16sp"
+        android:textColor="#393939"
+        android:fontFamily="serif"
+        android:layout_marginTop="15dp"
+        android:paddingStart="63dp"
+        android:paddingEnd="30dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/etEventCode"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="50dp" />
+
+    <ImageView
+        app:srcCompat="@drawable/profile_arrow"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toTopOf="@+id/tvEventValidity"
+        app:layout_constraintBottom_toBottomOf="@+id/tvEventValidity"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+    <ImageView
+        app:srcCompat="@drawable/ic_timelapse"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="@+id/tvEventValidity"
+        app:layout_constraintBottom_toBottomOf="@+id/tvEventValidity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/etAdCode"
+        android:hint="Advert Code"
+        android:textSize="16sp"
+        android:textColor="#393939"
+        android:textColorHint="#939393"
+        android:fontFamily="serif"
+        android:inputType="number"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvEventValidity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ivAd"
+        app:srcCompat="@drawable/ic_venue"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="@+id/etAdCode"
+        app:layout_constraintBottom_toBottomOf="@+id/etAdCode"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+
+    <TextView
+        android:id="@+id/tvAdValidity"
+        android:hint="Ad Validity"
+        android:textSize="16sp"
+        android:textColor="#393939"
+        android:fontFamily="serif"
+        android:layout_marginTop="15dp"
+        android:paddingStart="63dp"
+        android:paddingEnd="30dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/etAdCode"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="50dp" />
+
+    <ImageView
+        app:srcCompat="@drawable/profile_arrow"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toTopOf="@+id/tvAdValidity"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAdValidity"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+    <ImageView
+        app:srcCompat="@drawable/ic_timelapse"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="@+id/tvAdValidity"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAdValidity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+
+
+
+    <ImageView
+        app:srcCompat="@drawable/profile_send"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintTop_toTopOf="@+id/viewSend"
+        app:layout_constraintRight_toRightOf="@+id/viewSend"
+        app:layout_constraintBottom_toBottomOf="@+id/viewSend"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+
+    <View
+        android:id="@+id/viewSend"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvAdValidity"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/viewSend"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="30dp"
+        android:layout_height="60dp" />
+
+</android.support.constraint.ConstraintLayout>

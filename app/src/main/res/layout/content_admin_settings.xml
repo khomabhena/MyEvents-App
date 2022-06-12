@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="tech.myevents.app.SettingsAdmin"
+    tools:showIn="@layout/activity_admin_settings">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardImage"
+            android:layout_gravity="center_horizontal"
+            card_view:cardCornerRadius="4dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:hint="Administrator"
+            android:textSize="15sp"
+            android:textColorHint="#282828"
+            android:textColor="#282828"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"
+            app:layout_constraintTop_toTopOf="@+id/cardImage"
+            app:layout_constraintLeft_toRightOf="@+id/cardImage"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:hint="Mr K. Mabhena"
+            android:textSize="14sp"
+            android:fontFamily="serif"
+            android:textColorHint="#393939"
+            android:textColor="#393939"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvUsername"
+            app:layout_constraintLeft_toRightOf="@+id/cardImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/viewProfile"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/viewX"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <View
+            android:id="@+id/viewX"
+            android:layout_marginTop="20dp"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/cardImage"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+
+        <TextView
+            android:id="@+id/tvAppVersion"
+            android:text="App Version"
+            android:textSize="16sp"
+            android:fontFamily="serif"
+            android:textColor="#252525"
+            android:paddingStart="70dp"
+            android:paddingEnd="30dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/viewX"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="70dp" />
+
+        <ImageView
+            app:srcCompat="@drawable/settings_business"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@id/tvAppVersion"
+            app:layout_constraintBottom_toBottomOf="@id/tvAppVersion"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_marginStart="70dp"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tvAppVersion"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <ImageView
+            app:srcCompat="@drawable/settings_broadcast"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/tvBroadcast"
+            app:layout_constraintBottom_toBottomOf="@+id/tvBroadcast"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/tvBroadcast"
+            android:text="Publish Broadcasts"
+            android:textSize="16sp"
+            android:fontFamily="serif"
+            android:textColor="#393939"
+            android:paddingStart="70dp"
+            android:paddingEnd="30dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tvAppVersion"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="70dp" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_marginStart="70dp"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tvBroadcast"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+        <ImageView
+            app:srcCompat="@drawable/settings_ticket"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/tvBroadcastCharges"
+            app:layout_constraintBottom_toBottomOf="@+id/tvBroadcastCharges"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="27dp"
+            android:layout_height="27dp" />
+
+        <TextView
+            android:id="@+id/tvBroadcastCharges"
+            android:text="Broadcast Charges"
+            android:textSize="16sp"
+            android:fontFamily="serif"
+            android:textColor="#252525"
+            android:paddingStart="70dp"
+            android:paddingEnd="30dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tvBroadcast"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="70dp" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_marginStart="70dp"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tvBroadcastCharges"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <ImageView
+            app:srcCompat="@drawable/settings_loyalty"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/tvPromoCode"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPromoCode"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/tvPromoCode"
+            android:text="Promotion Codes"
+            android:textSize="16sp"
+            android:fontFamily="serif"
+            android:textColor="#393939"
+            android:gravity="center_vertical"
+            android:paddingStart="70dp"
+            android:paddingEnd="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvBroadcastCharges"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="70dp" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_marginStart="70dp"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tvPromoCode"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <ImageView
+            app:srcCompat="@drawable/settings_friends"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/tvWelcomeMessages"
+            app:layout_constraintBottom_toBottomOf="@+id/tvWelcomeMessages"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/tvWelcomeMessages"
+            android:text="Welcome Messages"
+            android:textSize="16sp"
+            android:fontFamily="serif"
+            android:textColor="#252525"
+            android:paddingStart="70dp"
+            android:paddingEnd="30dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tvPromoCode"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="70dp" />
+
+        <View
+            android:id="@+id/view6"
+            android:layout_marginStart="70dp"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tvWelcomeMessages"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <ImageView
+            app:srcCompat="@drawable/settings_friends"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/tvDeleteBroadcasts"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDeleteBroadcasts"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/tvDeleteBroadcasts"
+            android:text="Delete Broadcasts"
+            android:textSize="16sp"
+            android:fontFamily="serif"
+            android:textColor="#252525"
+            android:paddingStart="70dp"
+            android:paddingEnd="30dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tvWelcomeMessages"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="70dp" />
+
+        <View
+            android:id="@+id/view7"
+            android:layout_marginStart="70dp"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tvDeleteBroadcasts"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <ImageView
+            app:srcCompat="@drawable/settings_friends"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/tvVerifyContacts"
+            app:layout_constraintBottom_toBottomOf="@+id/tvVerifyContacts"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/tvVerifyContacts"
+            android:text="Verify Contacts"
+            android:textSize="16sp"
+            android:fontFamily="serif"
+            android:textColor="#252525"
+            android:paddingStart="70dp"
+            android:paddingEnd="30dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tvDeleteBroadcasts"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="70dp" />
+
+        <View
+            android:id="@+id/view8"
+            android:layout_marginStart="70dp"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tvVerifyContacts"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+        <ImageView
+            app:srcCompat="@drawable/ic_verified_teal"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toTopOf="@+id/tvVerifyBusinesses"
+            app:layout_constraintBottom_toBottomOf="@+id/tvVerifyBusinesses"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/tvVerifyBusinesses"
+            android:text="Verify Business"
+            android:textSize="16sp"
+            android:fontFamily="serif"
+            android:textColor="#252525"
+            android:paddingStart="70dp"
+            android:paddingEnd="30dp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tvVerifyContacts"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="70dp" />
+
+        <View
+            android:id="@+id/view9"
+            android:layout_marginStart="70dp"
+            android:background="@color/line_divider"
+            app:layout_constraintTop_toBottomOf="@+id/tvVerifyBusinesses"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="2dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="9dp"
+            card_view:cardCornerRadius="30dp"
+            card_view:layout_constraintLeft_toLeftOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:scaleType="fitXY" />
+
+        </android.support.v7.widget.CardView>
+
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_delete"
+            card_view:layout_constraintTop_toBottomOf="@+id/cardImage"
+            card_view:layout_constraintLeft_toLeftOf="@+id/cardImage"
+            card_view:layout_constraintRight_toRightOf="@+id/cardImage"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/tvBrandName"
+            android:fontFamily="serif"
+            android:hint="MyEvents App"
+            android:textColor="#363636"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            card_view:layout_constraintLeft_toRightOf="@+id/cardImage"
+            card_view:layout_constraintTop_toTopOf="@+id/cardImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/ivVerified"
+            android:visibility="gone"
+            android:src="@drawable/ic_verified_teal"
+            android:layout_marginStart="7dp"
+            card_view:layout_constraintBottom_toBottomOf="@+id/tvBrandName"
+            card_view:layout_constraintLeft_toRightOf="@+id/tvBrandName"
+            card_view:layout_constraintTop_toTopOf="@+id/tvBrandName"
+            android:layout_width="12dp"
+            android:layout_height="12dp" />
+
+        <TextView
+            android:id="@+id/tvBroadcastTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:hint="1d"
+            android:textColor="#9e9e9e"
+            android:textSize="12sp"
+            card_view:layout_constraintBottom_toBottomOf="@+id/tvBrandName"
+            card_view:layout_constraintLeft_toRightOf="@+id/ivVerified"
+            card_view:layout_constraintTop_toTopOf="@+id/tvBrandName" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:indeterminate="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            card_view:layout_constraintTop_toBottomOf="@+id/cardImage"
+            card_view:layout_constraintLeft_toLeftOf="@+id/cardImage"
+            card_view:layout_constraintRight_toRightOf="@+id/cardImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:id="@+id/llButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            card_view:layout_constraintLeft_toLeftOf="@+id/tvBrandName"
+            card_view:layout_constraintRight_toRightOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/tvBrandName">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="5dp">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivBitmap"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:adjustViewBounds="true"
+                        android:gravity="end"
+                        android:maxHeight="200dp"
+                        android:minHeight="200dp"
+                        android:scaleType="centerCrop"
+                        card_view:layout_constraintLeft_toLeftOf="parent"
+                        card_view:layout_constraintRight_toRightOf="parent"
+                        card_view:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif"
+                        android:text="College Drink Up"
+                        android:textColor="#424242"
+                        android:textSize="14sp"
+                        card_view:layout_constraintLeft_toLeftOf="parent"
+                        card_view:layout_constraintTop_toBottomOf="@+id/ivBitmap" />
+
+                    <ImageView
+                        android:id="@+id/ivCategory"
+                        android:src="@drawable/profile_category"
+                        card_view:layout_constraintTop_toTopOf="@+id/tvCategory"
+                        card_view:layout_constraintLeft_toLeftOf="@+id/tvTitle"
+                        card_view:layout_constraintBottom_toBottomOf="@+id/tvCategory"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp" />
+
+                    <TextView
+                        android:id="@+id/tvCategory"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="serif"
+                        android:text="Ad category"
+                        android:textColor="#c2292929"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="10dp"
+                        card_view:layout_constraintBottom_toBottomOf="parent"
+                        card_view:layout_constraintLeft_toRightOf="@+id/ivCategory"
+                        card_view:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/ivSeen"
+                        android:visibility="gone"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_notification_seen"
+                        android:layout_marginStart="7dp"
+                        card_view:layout_constraintTop_toTopOf="@+id/tvCategory"
+                        card_view:layout_constraintLeft_toRightOf="@+id/tvCategory"
+                        card_view:layout_constraintBottom_toBottomOf="@+id/tvCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivShare"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_share"
+                    card_view:layout_constraintLeft_toLeftOf="@+id/constRow"
+                    card_view:layout_constraintTop_toBottomOf="@+id/constRow" />
+
+                <ImageView
+                    android:id="@+id/ivMessage"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_message"
+                    card_view:layout_constraintLeft_toRightOf="@+id/ivShare"
+                    card_view:layout_constraintTop_toBottomOf="@+id/constRow" />
+
+                <LinearLayout
+                    android:id="@+id/llComments"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivComments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_comment" />
+
+                    <ImageView
+                        android:id="@+id/ivSeenComments"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_notification_seen" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="4dp"
+            android:background="@color/line_divider_2"
+            card_view:layout_constraintLeft_toLeftOf="parent"
+            card_view:layout_constraintRight_toRightOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/llButton"
+            android:layout_width="0dp"
+            android:layout_height="1px" />
+
+    </android.support.constraint.ConstraintLayout>
+
+<!--
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardAdRow"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:src="@drawable/sq6"
+                android:scaleType="fitXY"
+                android:layout_width="130dp"
+                android:layout_height="130dp" />
+
+            <TextView
+                android:id="@+id/tvBrandName"
+                android:text="Your Brand Name"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:fontFamily="serif"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center_horizontal"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintLeft_toRightOf="@+id/ivLogo"
+                card_view:layout_constraintRight_toRightOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@drawable/ic_verified_teal"
+                android:layout_marginStart="5dp"
+                card_view:layout_constraintTop_toTopOf="@+id/tvBrandName"
+                card_view:layout_constraintBottom_toBottomOf="@+id/tvBrandName"
+                card_view:layout_constraintLeft_toRightOf="@+id/tvBrandName"
+                android:layout_width="14dp"
+                android:layout_height="14dp" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:text="Your Ad Title Here"
+                android:textSize="13sp"
+                android:fontFamily="serif"
+                android:textColor="#424242"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center_horizontal"
+                card_view:layout_constraintTop_toBottomOf="@+id/tvBrandName"
+                card_view:layout_constraintLeft_toRightOf="@+id/ivLogo"
+                card_view:layout_constraintRight_toRightOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvBroadcastTime"
+                android:text="2 min ago"
+                android:textSize="12sp"
+                android:textColor="#9e9e9e"
+                android:fontFamily="serif"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center_horizontal"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintRight_toRightOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvLocation1"
+                android:text="Bulawayo"
+                android:textSize="12sp"
+                android:fontFamily="serif"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_horizontal"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintLeft_toRightOf="@+id/ivLogo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/ivSeen"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_notification_seen"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintRight_toRightOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:id="@+id/ivShare"
+            android:src="@drawable/ic_share"
+            android:scaleType="centerInside"
+            android:layout_width="120dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/ivMessage"
+            android:src="@drawable/ic_message"
+            android:scaleType="centerInside"
+            android:layout_width="120dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="120dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivComments"
+                android:src="@drawable/ic_comment"
+                android:scaleType="centerInside"
+                android:layout_marginStart="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/ivSeenComments"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_notification_seen"
+                android:layout_marginStart="7dp"
+                android:layout_marginBottom="2dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    -->
+
+</LinearLayout>
